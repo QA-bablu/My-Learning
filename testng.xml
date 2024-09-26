@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="Url" value="www.bablu.com"/>
+  <test thread-count="5" name="Savings Account">
+
+    <classes>
+   
+      <class name="TestNGFramework.SavingsAccount">
+		<methods>
+			
+			
+			
+			
+		</methods>
+      </class>
+      
+ 
+    </classes>
+  </test>
+    <test thread-count="5" name="Credit Cards">
+    <classes>
+    
+      <class name="TestNGFramework.CreditCards">
+		
+      </class>
+    </classes>
+  </test>
+  
+    <test thread-count="5" name="Personal Loans">
+    <classes>
+      <class name="TestNGFramework.PersonalLoan">
+		<methods>
+			<exclude name="largeAmount"/>
+		</methods>
+      </class>
+    
+    </classes>
+  </test>
+</suite> <!-- Suite -->
